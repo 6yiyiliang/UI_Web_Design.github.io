@@ -1,0 +1,302 @@
+/*一、主体部分*/
+body {
+    text-align: center;
+    margin: 0;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+/* 
+二、页眉部分 
+*/
+header {
+    height: 100px;
+}
+#logo img {
+    float: left;
+    width: 230px;
+    height: 100px;
+}
+/* 
+三、菜单部分 
+*/
+/*菜单导航栏*/
+nav {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(28, 110, 196);
+}
+/*菜单整体区域*/
+#menu {
+    width: 1680px;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+}
+#menu a {
+    margin: 0px 40px;
+}
+/* 菜单栏样式 */
+#menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+#menu ul li {
+    list-style: none;
+}
+#menu ul li a {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*菜单栏-超链接正常和被访问*/
+/*菜单栏-超链接光标悬浮和激活*/
+#menu ul a:hover,#menu ul a:active {
+    background-color: red;
+}
+/*四、主体部分 */
+/* 主体容器1 */
+#container1 {
+    width: 1500px;
+    height: 297px;
+    margin: 0 auto;
+    border: 1px solid;
+    overflow: hidden;
+    position: relative; /*添加相对定位*/
+}
+/* 左侧栏 */
+#left-column {
+    float: left;
+    width: 59%; /* 调整宽度 */
+}
+/* 右侧栏 */
+#right-column {
+    float: left;
+    width: 41%; /* 调整宽度 */
+}
+/* 中间竖线 */
+#separator {
+    border-left: 1px solid;
+    height: 300px; /* 根据内容高度调整 */
+    position: absolute;
+    left: 59%; /* 与左侧栏宽度相匹配 */
+}
+/* 学院要闻和通知公告样式 */
+.news {
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid;
+}
+.text-right1 {
+    font-size: 19px;
+    position: absolute;
+    top: 0;
+    left: 500px;
+    width: 500px;
+    text-align: left;
+    margin-left: -215px;
+}
+/* 文字样式 */
+.text-right2 {
+    font-size: 19px;
+    position: absolute;
+    top: 0;
+    left: 59%; /* 与左侧栏的宽度相匹配 */
+    width: 41%; /* 右侧栏的宽度 */
+    text-align: left;
+    padding-left: 20px; /* 左边距 */
+}
+/* 轮播图样式 */
+#slider {
+    width: 240px;
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+    margin: 15px;
+}
+#slider img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+#slider img:first-child {
+    display: block;
+}
+.new_title a {
+    color: black; /*设置未点击时的颜色为黑色*/
+}
+.new_title a:visited {
+    color: black; /*设置已访问链接的颜色为黑色*/
+}
+.new_title a:hover,.new_title a:active {
+    color: red; /*设置悬停和激活时的颜色为红色 */
+}
+.news_date {
+    width: 130px;
+    float: right;
+}
+.news_list {
+    margin: 0 15px;
+    padding: 5px 0;
+    height: 150px;
+    width: 600px;
+}
+/* 新闻区域——列表，单行 */
+.news_list li div {
+    line-height: 8px;
+    height: 30px;
+    font-size: 19px;
+}
+/* 新闻区域——列表，单条新闻日期 */
+.news_list .news_date {
+    width: 250px;
+    color: grey;
+}
+/* 新闻区域——列表，单条新闻标题 */
+.news_list .news_title {
+    overflow: hidden; /* 多余内容隐藏 */
+    text-overflow: ellipsis; /* 多余内容显示成省略号 */
+}
+/* 页脚上面的主体部分样式 */
+#container2 {
+    width: 1500px; /* 保持与主体部分相同的宽度 */
+    height: 270px; /* 适当调整高度 */
+    margin: 0 auto; /* 让其水平居中 */
+    border: 1px solid; /* 添加外边框 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.xxyd_list {
+    position: absolute;
+    top: 80px; /*调整这个值以移动文字*/
+    left: 175px;
+    width: 300px; /* 调整宽度 */
+    margin: 5px;
+    font-size: 19px;
+}
+.xxyd_list ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.xxyd_list li {
+    width: 33.33%; /* 每行三个 */
+    box-sizing: border-box;
+    margin: 4px 0;
+    font-weight: bold;
+    text-align: center; /* 居中对齐 */
+}
+.xxyd_list a:link,.xxyd_list a:visited {
+    color: black;
+    text-decoration: none;
+}
+.xxyd_list a:hover,.xxyd_list a:active {
+    color: red;
+    text-decoration: underline;
+}
+.xxdt_list1{
+        text-align: left;
+        margin-left: 160px;
+        margin-top: 55px;
+        float:left;
+        width:300px;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+}
+.zxjs_list1{
+        text-align: left;
+        margin-left: 160px;
+        margin-top: 55px;
+        float:left;
+        width:300px;
+        font-size: 18px;
+        font-weight: bold;
+        color: black;
+}
+.zxjs_list1_1,.xxdt_list1_1{
+    	color: gray;
+}
+#lefto,#middel,#righto {
+    width: calc(33% - 2px);
+    height: 240px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative; /*要确保父元素是相对定位的*/
+}
+/* 添加以下代码来保证三张图片都在左上角 */
+#lefto img,#middel img,#righto img {
+    position: absolute; /* 图片相对于父元素定位 */
+    top: 0;
+    left: 0;
+}
+/* 每个部分的样式 */
+.n1,.n2,.n3 {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative; /* 要确保是相对定位 */
+}
+.n1 {
+    color: blue;
+    top: -80px;
+    right: -30px;
+}
+.n2 {
+    color: green;
+    position: absolute;
+    top: -35px; 
+    left: 50%; /* 居中对齐 */
+    transform: translateX(-50%); /* 居中对齐 */
+}
+.n3 {
+    color: red;
+    position: absolute;
+    top: -35px; 
+    right: 150px;
+    transform: translateX(-50%); /* 居中对齐 */
+}
+#t1,#t2,#t3 {
+    position: absolute; /* 图片相对于父元素定位 */
+    height: 150px;
+    float: left; /* 左浮动 */
+    position: relative; /* 相对定位 */
+}
+#t1 {
+    width: 165px;
+}
+#t2 {
+    width: 150px;
+}
+
+#t3 {
+    width: 150px;
+}
+p {
+    font-size: 20px;
+    margin: 0px;
+    
+}
+footer {
+    width: 100%;
+    height: 225px;
+    background-color: rgb(72, 144, 218);
+    color: white;
+}
