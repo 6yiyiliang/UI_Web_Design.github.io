@@ -19,15 +19,15 @@
 ```
 untitled1/
 ├── css/
-│   └── home.css/        
+│   └── home.css
 ├── img/
-│   ├── 1.jpg/
-│   ├── 2.jpg/
-│   ├── 3.jpg/
-│   ├── 4.jpg/
-│   ├── logo.jpg/
-│   ├── 学习动态.png/
-│   ├── 学习园地.png/
+│   ├── 1.jpg
+│   ├── 2.jpg
+│   ├── 3.jpg
+│   ├── 4.jpg
+│   ├── logo.jpg
+│   ├── 学习动态.png
+│   ├── 学习园地.png
 │   ├── App.vue
 │   └── 最新技术.png
 ├── js
